@@ -1,0 +1,26 @@
+extend layout
+
+block content
+	div
+		h1.signup_hd_txt Sign up
+	div.signup_form
+		form(method="POST", action= "/signup/get_form")
+			p.sp_label First name 
+			input.sp_box(type="text", name="fname")
+			p
+			p.sp_label Last name
+			input.sp_box(type="text", name="lname")
+			p
+			p.sp_label Username 
+			input.sp_box(type="text", name="uname")
+			p
+			p.sp_label Email ID
+			input.sp_box(type="email", name="email")
+			p
+			p.sp_label Password
+			input.sp_box(type="password", name="password")
+			br
+			br
+			br
+			input(type="submit")
+	script(type="text/javascript" src="../javascripts/signup_runtime.js")
