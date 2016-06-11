@@ -1,0 +1,15 @@
+extend layout
+
+block content
+	div
+		h1.login_hd_txt Sign In
+	div.login-form
+		form(method="GET", action= "/login/get_form")
+			p.si_label User Name
+			input.si_box#si_uname(type="text", name="uname")
+			p.si_label Password
+			input.si_box#si_pw(type="password", name="password")
+			br
+			br
+			input.si_submit(type="submit")
+	script(type="text/javascript" src="../javascripts/login_runtime.js")
