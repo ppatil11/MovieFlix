@@ -1,0 +1,162 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1")
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheets/bootstrap-theme.min.css')
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js")
+		script(src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+		script(type="text/javascript" src="../javascripts/home_runtime.js")
+
+	body(data-spy="scroll" data-target=".navbar" data-offset="50")
+		nav.navbar.navbar-inverse.navbar-fixed-top
+			div.container-fluid
+
+				div.navbar-header
+					button.navbar-toggle(type="button" data-toggle="collapse" data-target="#myNavbar")                       
+					a.navbar-brand.navbrand(href="/index/" style= "color : red" ) MovieFlix
+				div
+					div.collapse.navbar-collapse#myNavbar
+						ul.nav.navbar-nav
+							li
+								a(href="#section1") Action
+							li
+								a(href="#section2") Thriller
+							li 
+								a(href="#section3") Drama
+							li.dropdown
+								a.dropdown-toggle(data-toggle="dropdown" href="#") Browse more
+									span.caret
+								ul.dropdown-menu
+									li
+										a(href="#section41") Comedy
+									li
+										a(href="#section42") Romance
+		div#section1.container-fluid
+			div.row
+				div.col-md-2
+					a(href="#{movieData[0].Poster}")
+						h3 #{movieData[0].Title}     
+						img.img-responsive(src="#{movieData[0].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[1].Poster}")
+						h3 #{movieData[1].Title}     
+						img.img-responsive(src="#{movieData[1].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[2].Poster}")
+						h3 #{movieData[2].Title}     
+						img.img-responsive(src="#{movieData[2].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[3].Poster}")
+						h3 #{movieData[3].Title}     
+						img.img-responsive(src="#{movieData[3].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[4].Poster}")
+						h3 #{movieData[4].Title}     
+						img.img-responsive(src="#{movieData[4].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[5].Poster}")
+						h3 #{movieData[5].Title}     
+						img.img-responsive(src="#{movieData[5].Poster}" style="width:200px;height:250px")
+		div#section2.container-fluid
+			div.col-md-2
+					a(href="#{movieData[6].Poster}")
+						h3 #{movieData[6].Title}     
+						img.img-responsive(src="#{movieData[6].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[7].Poster}")
+							h3 #{movieData[7].Title}     
+							img.img-responsive(src="#{movieData[7].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[8].Poster}")
+						h3 #{movieData[8].Title}     
+						img.img-responsive(src="#{movieData[8].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[9].Poster}")
+						h3 #{movieData[9].Title}     
+						img.img-responsive(src="#{movieData[9].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[10].Poster}")
+						h3 #{movieData[10].Title}     
+						img.img-responsive(src="#{movieData[10].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[11].Poster}")
+						h3 #{movieData[11].Title}     
+						img.img-responsive(src="#{movieData[12].Poster}" style="width:200px;height:250px")
+		div#section3.container-fluid
+			div.col-md-2
+					a(href="#{movieData[13].Poster}")
+						h3 #{movieData[13].Title}     
+						img.img-responsive(src="#{movieData[13].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[14].Poster}")
+							h3 #{movieData[14].Title}     
+							img.img-responsive(src="#{movieData[14].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[15].Poster}")
+						h3 #{movieData[15].Title}     
+						img.img-responsive(src="#{movieData[15].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[16].Poster}")
+						h3 #{movieData[16].Title}     
+						img.img-responsive(src="#{movieData[16].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[17].Poster}")
+						h3 #{movieData[17].Title}     
+						img.img-responsive(src="#{movieData[17].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[18].Poster}")
+						h3 #{movieData[18].Title}     
+						img.img-responsive(src="#{movieData[18].Poster}" style="width:200px;height:250px")
+		div#section41.container-fluid
+			div.col-md-2
+					a(href="#{movieData[19].Poster}")
+						h3 #{movieData[19].Title}     
+						img.img-responsive(src="#{movieData[19].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[20].Poster}")
+							h3 #{movieData[20].Title}     
+							img.img-responsive(src="#{movieData[20].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[21].Poster}")
+						h3 #{movieData[21].Title}     
+						img.img-responsive(src="#{movieData[21].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[22].Poster}")
+						h3 #{movieData[22].Title}     
+						img.img-responsive(src="#{movieData[22].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[23].Poster}")
+						h3 #{movieData[23].Title}     
+						img.img-responsive(src="#{movieData[23].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[24].Poster}")
+						h3 #{movieData[24].Title}     
+						img.img-responsive(src="#{movieData[24].Poster}" style="width:200px;height:250px")
+		div#section42.container-fluid
+			div.col-md-2
+					a(href="#{movieData[25].Poster}")
+						h3 #{movieData[25].Title}     
+						img.img-responsive(src="#{movieData[25].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[26].Poster}")
+							h3 #{movieData[26].Title}     
+							img.img-responsive(src="#{movieData[26].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[27].Poster}")
+						h3 #{movieData[27].Title}     
+						img.img-responsive(src="#{movieData[27].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[28].Poster}")
+						h3 #{movieData[28].Title}     
+						img.img-responsive(src="#{movieData[28].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[29].Poster}")
+						h3 #{movieData[29].Title}     
+						img.img-responsive(src="#{movieData[29].Poster}" style="width:200px;height:250px")
+				div.col-md-2
+					a(href="#{movieData[30].Poster}")
+						h3 #{movieData[30].Title}     
+						img.img-responsive(src="#{movieData[30].Poster}" style="width:200px;height:250px")
